@@ -1,0 +1,16 @@
+{
+    "name": "felipe/udemy-bienes-raices-poo",
+    "description": "Creando un proyecto con programacion orientada a objetos",
+    "authors": [
+        {
+            "name": "FelipeArismendi",
+            "email": "farismendi27@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    }
+}

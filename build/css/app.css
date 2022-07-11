@@ -779,6 +779,8 @@ table.propiedades {
     table.propiedades thead th {
       color: #FFFFFF;
       padding: 2rem; }
+  table.propiedades tr td {
+    color: #FFFFFF; }
   table.propiedades .imagen-tabla {
     width: 10rem; }
 
