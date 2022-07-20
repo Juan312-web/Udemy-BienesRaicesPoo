@@ -1,8 +1,6 @@
 <?php
-
-$db = conectarDB();
+require 'includes/app.php';
 // Autenticar el usuario
-
 $errores = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -26,9 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Revisar si el usuario existe.
         $query = "SELECT * FROM usuarios WHERE email = '${email}' ";
         $resultado = mysqli_query($db, $query);
-
-
-
 
         if ($resultado->num_rows) {
             // Revisar si el password es correcto
@@ -62,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 // Incluye el header
-require 'includes/funciones.php';
 incluirTemplate('header');
 ?>
 
