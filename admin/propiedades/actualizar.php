@@ -1,6 +1,7 @@
 <?php
 
 use App\Propiedad;
+use App\Vendedor;
 use Intervention\Image\ImageManagerStatic as Image;
 
 require '../../includes/app.php';
@@ -19,11 +20,10 @@ if (!$id) {
 $propiedad = Propiedad::find($id);
 
 // Consultar para obtener los vendedores
-
+$vendedores = Vendedor::all();
 
 // Arreglo con mensajes de errores
 $errores = Propiedad::getErrores();
-
 
 // Ejecutar el código después de que el usuario envia el formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
